@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Header from "./component/Header/Header";
+import Homepage from "./Homepage/page"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center  font-sans">
-     {/* <Header /> */}
+    <div className="">
+      <Homepage/>
     </div>
   );
 }
