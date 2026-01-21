@@ -19,8 +19,12 @@ const slides = [
   {
     title: "Justice With Integrity",
     description: "Providing honest, transparent legal solutions.",
-    image: "/Images/close-up-law-statue.jpg",
+    image: "/Images/golden-justice-scale.jpg",
     primaryButton: {
+      text: "Free Consultation",
+      link: "/contact",
+    },
+    secondaryButton: {
       text: "Free Consultation",
       link: "/contact",
     },
@@ -100,7 +104,7 @@ export default function HomeBanner() {
   if (!extendedSlides.length) return null;
 
   return (
-    <section className=" h-auto w-full overflow-hidden">
+    <section className=" h-[80vh] w-full overflow-hidden">
       {/* SLIDER */}
       <div
         className={`flex h-full relative ${
@@ -109,7 +113,7 @@ export default function HomeBanner() {
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {extendedSlides.map((slide, index) => (
-          <div key={index} className="min-w-full h-full">
+          <div key={index} className="relative min-w-full h-full">
             {/* IMAGE (optional) */}
             {slide?.image && (
               <img
