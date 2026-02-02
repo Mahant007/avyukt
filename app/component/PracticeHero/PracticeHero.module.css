@@ -1,0 +1,96 @@
+/* HERO SECTION */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+/* DARK OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 11, 46, 0.75);
+}
+
+/* CONTENT */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 2rem;
+  margin-left: 10%;
+  color: #ffffff;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e5e7eb;
+  margin-bottom: 2rem;
+}
+
+/* CTA BUTTON */
+.cta {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #c9a24d;
+  color: #020b2e;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #b8923d;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+
+@media (max-width: 1024px) {
+  .content {
+    margin-left: 5%;
+  }
+
+  .content h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 60vh;
+  }
+
+  .content {
+    margin-left: 0;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .content h1 {
+    font-size: 1.7rem;
+  }
+}

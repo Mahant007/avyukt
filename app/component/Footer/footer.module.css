@@ -1,0 +1,233 @@
+/* =============================
+   BASE FOOTER
+============================= */
+
+.footer {
+  width: 100%;
+  background-color: #020b2e;
+  color: #cbd5e1;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 7rem 2rem 3rem;
+}
+
+/* =============================
+   MAIN FLEX LAYOUT
+============================= */
+
+.main {
+  display: flex;
+  gap: 5rem;
+}
+
+/* LEFT SECTION (30%) */
+.left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #9ca3af;
+}
+
+/* RIGHT SECTION (70%) */
+.right {
+  width: 70%;
+  display: flex;
+  gap: 4rem;
+}
+
+/* =============================
+   ACCORDION STRUCTURE
+============================= */
+
+.accordion {
+  width: 100%;
+}
+
+.accordionHeader {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.75rem 0;
+}
+
+/* Chevron icon */
+.icon {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* Accordion body */
+.accordionBody {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+/* Open state */
+.open {
+  max-height: 500px;
+}
+
+/* =============================
+   LIST STYLING (DESKTOP FIX)
+============================= */
+
+.accordionBody li {
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.accordionBody li:last-child {
+  padding-bottom: 0;
+}
+
+.accordionBody a {
+  color: #cbd5e1;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.accordionBody a:hover {
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+/* =============================
+   BOTTOM BAR
+============================= */
+
+.bottom {
+  margin-top: 5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* =============================
+   LARGE DESKTOP (≥1920)
+============================= */
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  .main {
+    gap: 6rem;
+  }
+}
+
+/* =============================
+   LAPTOP (≤1440)
+============================= */
+
+@media (max-width: 1440px) {
+  .right {
+    gap: 3rem;
+  }
+}
+
+/* =============================
+   TABLET (≤1024)
+============================= */
+
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .right {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* =============================
+   MOBILE (≤767)
+============================= */
+
+@media (max-width: 767px) {
+  .container {
+    padding: 5rem 1.5rem 2.5rem;
+  }
+
+  .accordionHeader {
+    font-size: 1rem;
+  }
+
+  .accordionBody li {
+    font-size: 0.85rem;
+  }
+}
+
+/* =============================
+   SMALL MOBILE (≤320)
+============================= */
+
+@media (max-width: 320px) {
+  .container {
+    padding: 4rem 1rem 2rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .bottom {
+    font-size: 0.75rem;
+  }
+}
+
+/* =============================
+   DESKTOP: DISABLE ACCORDION
+============================= */
+
+@media (min-width: 1025px) {
+  .accordionHeader {
+    cursor: default;
+  }
+
+  .accordionBody {
+    max-height: none;
+  }
+
+  .icon {
+    display: none;
+  }
+}
