@@ -18,13 +18,7 @@ export const practiceAreasData = {
       icon: "/icons/practice-areas/criminal-litigation.svg",
       viewMoreLink: "/practice/criminal-litigation",
     },
-    {
-      title: "Revenue & Land Matters",
-      description:
-        "Handling matters related to land records, revenue entries, tenancy, and proceedings before revenue authorities.",
-      icon: "/icons/practice-areas/revenue-land.svg",
-      viewMoreLink: "/practice/revenue-land",
-    },
+    
     {
       title: "Family & Matrimonial Law",
       description:

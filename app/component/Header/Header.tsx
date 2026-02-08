@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./header.module.css";
+import { Container } from "lucide-react";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,14 +15,14 @@ export default function Header() {
       <div className={styles.container}>
 
         {/* LOGO */}
-        <div className={styles.logo}>
+        <div className={styles.logo_Container}>
           <Link href="/">
             <Image
-              src="/images/avyukt_logo1.png"
+              src="/images/avyukt_logo2.png"
               alt="Avyukt Associates"
-              width={60}
-              height={60}
-              priority
+              fill
+              
+              className={styles.logo}
             />
           </Link>
         </div>

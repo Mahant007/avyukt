@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #372605;
+  background-color: #1c3345;
 }
 
 /* CONTAINER */
@@ -17,8 +17,14 @@
 }
 
 /* LOGO */
+.logo_Container{
+  width: 150px !important;
+}
 .logo {
   display: flex;
+  position: relative !important;
+  width: 100% !important;   /* 🔥 Increase this */
+  height: 70px !important;
   align-items: center;
 }
 

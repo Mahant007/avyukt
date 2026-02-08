@@ -12,7 +12,7 @@ export const footerData = {
   },
 
   practiceAreas: [
-    { label: "Civil Litigation", href: "/CivilLitigation" },
+    { label: "Civil Litigation", href: "/practice/civil-litigation" },
     { label: "Criminal Litigation", href: "/practice/criminal-litigation" },
     { label: "Family & Matrimonial Law", href: "/practice/family-law" },
     { label: "Property Disputes", href: "/practice/property-disputes" },

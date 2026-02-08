@@ -1,0 +1,155 @@
+.section {
+  padding: 5rem 0;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #020b2e;
+  margin-bottom: 2rem;
+}
+
+.overview p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 1.2rem;
+}
+
+.block {
+  margin-top: 3.5rem;
+}
+
+.block h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #020b2e;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.block ul {
+  padding-left: 1.2rem;
+}
+
+.block ul li {
+  list-style: disc;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+  color: black;
+}
+
+.process {
+  padding-left: 1.2rem;
+}
+
+.process li {
+  list-style: decimal;
+  margin-bottom: 0.6rem;
+  color: black;
+}
+
+.faq {
+  margin-bottom: 1.2rem;
+}
+
+.faq strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 11, 46, 0.75);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin-left: 10%;
+  color: #ffffff;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.1rem;
+  color: #e5e7eb;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    height: 50vh;
+  }
+
+  .content {
+    margin-left: 5%;
+  }
+
+  .content h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 45vh;
+  }
+
+  .content {
+    margin-left: 0;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .content h1 {
+    font-size: 1.7rem;
+  }
+}
+
+
