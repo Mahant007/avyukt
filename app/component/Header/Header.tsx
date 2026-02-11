@@ -15,12 +15,14 @@ export default function Header() {
       <div className={styles.container}>
 
         {/* LOGO */}
-        <div className={styles.logo_Container}>
+        <div className={styles.logoWrapper}>
           <Link href="/">
             <Image
-              src="/images/avyukt_logo2.png"
+              src="/images/avyukt_logo4.png"
               alt="Avyukt Associates"
-              fill
+              fill 
+              
+              priority
               
               className={styles.logo}
             />
