@@ -1,4 +1,4 @@
-"use client";
+
 
 import Slider from "react-slick";
 import Link from "next/link";
@@ -57,6 +57,7 @@ export default function HeroSection() {
                 src={slide.image}
                 alt={slide?.title || "Banner"}
                 fill
+                unoptimized
                 priority={index === 0}
                 className="heroImage"
               />
