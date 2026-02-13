@@ -1,5 +1,7 @@
+/* ================= MAIN SECTION ================= */
+
 .section {
-  padding: 5rem 0;
+  padding: 6rem 0;
   background: #ffffff;
 }
 
@@ -9,70 +11,151 @@
   padding: 0 1.5rem;
 }
 
+/* ================= TITLE ================= */
+
 .title {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   font-weight: 700;
   color: #020b2e;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #041c54;
+  display: block;
+  margin-top: 15px;
+}
+
+/* ================= OVERVIEW ================= */
+
+.overview {
+  margin-bottom: 3rem;
 }
 
 .overview p {
-  font-size: 1.05rem;
-  line-height: 1.8;
+  font-size: 1.08rem;
+  line-height: 1.9;
   color: #374151;
   margin-bottom: 1.2rem;
 }
 
+/* ================= CONTENT BLOCK ================= */
+
 .block {
-  margin-top: 3.5rem;
+  margin-top: 4rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid #041c54;
 }
 
 .block h2 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 600;
   color: #020b2e;
   margin-bottom: 1rem;
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: #374151;
   margin-bottom: 1rem;
+  line-height: 1.7;
 }
 
+/* ================= LIST STYLE ================= */
+
 .block ul {
-  padding-left: 1.2rem;
+  padding-left: 0;
+  margin-top: 1rem;
 }
 
 .block ul li {
-  list-style: disc;
-  margin-bottom: 0.6rem;
-  line-height: 1.6;
-  color: black;
+  list-style: none;
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+  color: #111827;
 }
 
+.block ul li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #041c54;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+/* ================= PROCESS SECTION ================= */
+
 .process {
-  padding-left: 1.2rem;
+  padding-left: 0;
+  margin-top: 1rem;
 }
 
 .process li {
-  list-style: decimal;
-  margin-bottom: 0.6rem;
-  color: black;
+  list-style: none;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #111827;
 }
 
+.process li::before {
+  content: counter(step);
+  counter-increment: step;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #041c54;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.process {
+  counter-reset: step;
+}
+
+/* ================= FAQ ================= */
+
 .faq {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: #f8f9fb;
+  color: black;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.faq:hover {
+  background: #eef2f7;
 }
 
 .faq strong {
   display: block;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #020b2e;
 }
+
+/* ================= BANNER ================= */
+
 .banner {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 65vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -82,7 +165,11 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(2, 11, 46, 0.75);
+  background: linear-gradient(
+    to right,
+    rgba(2, 11, 46, 0.85),
+    rgba(2, 11, 46, 0.6)
+  );
 }
 
 .content {
@@ -95,21 +182,24 @@
 }
 
 .content h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .content p {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: #e5e7eb;
-  max-width: 700px;
-  line-height: 1.6;
+  max-width: 650px;
+  line-height: 1.7;
 }
 
+/* ================= RESPONSIVE ================= */
+
 @media (max-width: 1024px) {
+
   .banner {
-    height: 50vh;
+    height: 55vh;
   }
 
   .content {
@@ -117,13 +207,18 @@
   }
 
   .content h1 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 2.3rem;
   }
 }
 
 @media (max-width: 767px) {
+
   .banner {
-    height: 45vh;
+    height: 50vh;
   }
 
   .content {
@@ -140,9 +235,12 @@
     font-size: 1rem;
   }
 
-
   .title {
     font-size: 2rem;
+  }
+
+  .block {
+    padding-left: 1rem;
   }
 }
 
@@ -150,6 +248,8 @@
   .content h1 {
     font-size: 1.7rem;
   }
+
+  .title {
+    font-size: 1.6rem;
+  }
 }
-
-

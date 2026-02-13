@@ -4,6 +4,7 @@
   top: 0;
   z-index: 1000;
   background-color: #1c3345;
+  border-bottom: 1px solid white;
 }
 
 /* CONTAINER */
@@ -62,15 +63,18 @@
 
 .dropdownMenu {
   position: absolute;
-  top: calc(100% + 14px);
+  top: 25px;
   left: 0;
   background-color: #ffffff;
   min-width: 260px;
-  padding: 0.75rem 0;
+  display: flex;
+  gap: 10px !important;
+  flex-direction: column;
   border-radius: 10px;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
   border: 1px solid #e5e7eb;
 }
+
 
 .dropdownMenu li {
   list-style: none;
@@ -113,7 +117,7 @@
 
 /* MOBILE MENU */
 .mobileMenu {
-  background-color: #372605;
+  background-color: #1c3345;
   padding: 1.5rem 2rem;
 }
 .mobileMenu ul{

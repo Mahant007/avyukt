@@ -15,7 +15,7 @@ export default function PracticeLanding({
        
 
         {/* TITLE */}
-        {title && <h1 className={styles.title}>{title}</h1>}
+        {/* {title && <h1 className={styles.title}>{title}</h1>} */}
 
         {/* OVERVIEW */}
         {overview && (

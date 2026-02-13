@@ -22,7 +22,7 @@ export const footerData = {
 
   usefulLinks: [
     { label: "Home", href: "/" },
-    { label: "About Us", href: "/about" },
+    { label: "About Us", href: "/About" },
     { label: "Practice Areas", href: "/practice" },
     { label: "Courts & Authorities", href: "/courts-authorities" },
     { label: "Contact Us", href: "/contact" },
@@ -30,10 +30,11 @@ export const footerData = {
 
   contact: {
     address:
-      "224-B Wing, Gopal Palace, Opp. Ocean Park, Satellite Road, Nehrunagar, Ahmedabad (Gujarat) – 380015, India",
-    email: "contact@avyuktassociates.com",
-    phone: "+91 99253 87495",
-    hours: "Monday – Friday (9.00am – 9.00pm)",
+      "309-3rd Floor, ABC Campus Near Rabari Colony Cross Road Rabari Colony, Ahmedabad – 380026, Gujarat",
+    email: "avyuktasso003@gmail.com",
+    phone: "+91 81280 74963",
+    phone1: "+91 91733 48577",
+    hours: "Monday – Saturday (9.00am – 9.00pm)",
   },
 
   copyright:

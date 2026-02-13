@@ -2,7 +2,7 @@ export const consumerPracticeData = {
   title: "Consumer Protection & Consumer Dispute Resolution",
   
   banner: {
-    title: "Civil Litigation",
+    title: "Consumer Protection & Consumer Dispute Resolution",
     subtitle:
       "Comprehensive legal representation in civil disputes before courts and authorities.",
     backgroundImage: "/images/practice/civil-banner.jpg"

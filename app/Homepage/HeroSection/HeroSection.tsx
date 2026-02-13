@@ -1,12 +1,9 @@
 "use client";
 
-
 import Slider from "react-slick";
 import Link from "next/link";
-import Images from "next/image";
+import Image from "next/image";
 import "./HeroSection.css";
-
-
 
 export default function HeroSection() {
   const slides = [
@@ -25,12 +22,12 @@ export default function HeroSection() {
       },
     },
     {
-      image: "/Images/golden-justice-scale.jpg",
+      image: "/Images/slider2.png",
       title: "Protecting Your Rights",
       description: "Experienced advocacy before courts and tribunals.",
     },
     {
-      image: "/Images/golden-justice-scale.jpg",
+      image: "/Images/slide3.png",
     },
   ];
 
@@ -49,72 +46,70 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full h-[80vh]">
+    <section className="hero">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="relative h-[80vh] w-full">
+          <div key={index} className="heroSlide">
+
             {/* IMAGE */}
             {slide?.image && (
-              <img
+              <Image
                 src={slide.image}
                 alt={slide?.title || "Banner"}
-                className="absolute inset-0 w-full h-full object-cover"
+                fill
+                priority={index === 0}
+                className="heroImage"
               />
             )}
 
             {/* OVERLAY */}
-            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="heroOverlay"></div>
 
             {/* CONTENT */}
-            <div className="relative z-10 max-w-7xl mx-auto h-full px-6 flex items-center">
-              <div className="ml-auto max-w-xl text-right text-white space-y-6">
+            <div className="heroContent">
+              <div className="heroText">
 
-                {/* TITLE */}
                 {slide?.title && (
-                  <h1 className="text-4xl md:text-5xl font-bold">
-                    {slide.title}
-                  </h1>
+                  <h1 className="heroTitle">{slide.title}</h1>
                 )}
 
-                {/* DESCRIPTION */}
                 {slide?.description && (
-                  <p className="text-lg text-gray-200">
+                  <p className="heroDescription">
                     {slide.description}
                   </p>
                 )}
 
-                {/* BUTTONS */}
-                {(slide?.primaryButton?.text && slide?.primaryButton?.link) ||
-                (slide?.secondaryButton?.text &&
-                  slide?.secondaryButton?.link) ? (
-                  <div className="flex justify-end gap-4 pt-4">
-                    {slide?.primaryButton?.text &&
-                      slide?.primaryButton?.link && (
-                        <Link
-                          href={slide.primaryButton.link}
-                          className="bg-[#020e33] text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#020e33] transition"
-                        >
-                          {slide.primaryButton.text}
-                        </Link>
-                      )}
+                {(slide?.primaryButton || slide?.secondaryButton) && (
+                  <div className="heroButtons">
 
-                    {slide?.secondaryButton?.text &&
-                      slide?.secondaryButton?.link && (
-                        <Link
-                          href={slide.secondaryButton.link}
-                          className="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition"
-                        >
-                          {slide.secondaryButton.text}
-                        </Link>
-                      )}
+                    {slide?.primaryButton?.text && (
+                      <Link
+                        href={slide.primaryButton.link}
+                        className="primaryBtn"
+                      >
+                        {slide.primaryButton.text}
+                      </Link>
+                    )}
+
+                    {slide?.secondaryButton?.text && (
+                      <Link
+                        href={slide.secondaryButton.link}
+                        className="secondaryBtn"
+                      >
+                        {slide.secondaryButton.text}
+                      </Link>
+                    )}
+
                   </div>
-                ) : null}
+                )}
 
               </div>
             </div>
+
           </div>
         ))}
       </Slider>
     </section>
   );
 }
+  

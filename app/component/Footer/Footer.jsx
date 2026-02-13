@@ -113,7 +113,9 @@ export default function Footer() {
                   ✉️ <a href={`mailto:${contact.email}`}>{contact.email}</a>
                 </li>
                 <li>
-                  📞 <a href={`tel:${contact.phone}`}>{contact.phone}</a>
+                  📞 
+                  <a href={`tel:${contact.phone}`}>{contact.phone}</a><br/>
+               📞 <a href={`tel:${contact.phone1}`}>{contact.phone1}</a>
                 </li>
                 <li>🕒 {contact.hours}</li>
               </ul>

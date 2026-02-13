@@ -22,8 +22,14 @@
 
 .info h3 {
   margin-top: 1.5rem;
+  font-weight: 600;
+  font-size: 20px;
+  
 }
-
+.ContactForm .heading{
+  font-size: 30px;
+  margin: 20px 0;
+}
 .form input,
 .form textarea {
   width: 100%;

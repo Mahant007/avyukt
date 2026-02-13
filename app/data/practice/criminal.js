@@ -2,7 +2,7 @@ export const criminalPracticeData = {
   title: "Criminal Litigation",
 
   banner: {
-    title: "Civil Litigation",
+    title: "Criminal Litigation",
     subtitle:
       "Comprehensive legal representation in civil disputes before courts and authorities.",
     backgroundImage: "/images/practice/civil-banner.jpg",

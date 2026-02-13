@@ -2,7 +2,7 @@ export const propertyPracticeData = {
   title: "Property Disputes & Real Estate Legal Services",
 
   banner: {
-    title: "Civil Litigation",
+    title: "Property Disputes & Real Estate Legal Services",
     subtitle:
       "Comprehensive legal representation in civil disputes before courts and authorities.",
     backgroundImage: "/images/practice/civil-banner.jpg",

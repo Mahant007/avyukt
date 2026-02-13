@@ -7,6 +7,7 @@ export const aboutData = {
 
   intro: {
     heading: "About the Firm",
+     image: "/images/aboutsection.jpg",
     content: [
       "We are a dedicated legal practice offering comprehensive legal services across diverse areas of law.",
       "With a strong foundation in legal principles and courtroom advocacy, we are committed to delivering strategic, ethical, and result-oriented legal solutions to individuals, businesses, and institutions.",

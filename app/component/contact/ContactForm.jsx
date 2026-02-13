@@ -4,7 +4,7 @@ import styles from "../../contact/contact.module.css";
 
 export default function ContactForm({ form }) {
   return (
-    <div>
+    <div className={styles.ContactForm}>
         <h3 className={styles.heading}>Drop your message</h3>
       <form
         className={styles.form}

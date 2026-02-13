@@ -7,10 +7,7 @@ export const teamData = [
     shortIntro:
       "Practicing in revenue, land, property disputes, and civil matters.",
     bio: [
-      "Advocate Sweta Namalvar is the Founder of Avyukt Associates...",
-      "She handles mutation entries, land records, title disputes, partition matters...",
-      "She also practices consumer protection law before District and State Forums...",
-      "She believes in ethical, disciplined, and client-centric legal practice."
+     "Advocate Sweta Namalvar is the Founder of Avyukt Associates and a committed legal professional practicing in revenue matters, land matters, property disputes, and other civil matters. She is known for her focused approach, clear legal understanding, and positive attitude toward resolving legal issues effectively.With practical experience in handling land and revenue-related cases, she assists clients in matters such as mutation entries, land records, title disputes, partition of property, sale and purchase documentation, succession matters, and tenancy-related issues."
     ]
   },
   {
@@ -26,13 +23,13 @@ export const teamData = [
   },
   {
     id: "member3",
-    name: "Legal Associate",
-    role: "Documentation & Advisory",
-    image: "/images/user.png",
+    name: "Advocate Rajesh Singh Thakur",
+    role: "Sr. Advocate and Notary at Avyukt Associates",
+    image: "/images/user .png",
     shortIntro:
-      "Assisting in drafting and advisory services.",
+      "Advocate R. S. Thakur has a strong and well-established practice in Criminal Law, where he regularly appears before trial courts and appellate forums. ",
     bio: [
-      "Detailed profile paragraph here."
+      "Advocate Rajesh Singh Thakur is a Senior Advocate with over 20 years of extensive experience in court practice, known for his authoritative legal insight, strategic advocacy, and unwavering commitment to justice. Over the course of his distinguished career, he has successfully represented clients across a wide spectrum of legal disputes, earning respect from clients and peers alike for his professionalism, integrity, and results-driven approach."
     ]
   }
 ];

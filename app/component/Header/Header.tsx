@@ -50,11 +50,11 @@ export default function Header() {
 
               {practiceOpen && (
                 <ul className={styles.dropdownMenu}>
-                  <li><Link href="/CivilLitigation">Civil Litigation</Link></li>
-                  <li><Link href="/practice/criminal">Criminal Litigation</Link></li>
-                  <li><Link href="/practice/family">Family & Matrimonial</Link></li>
-                  <li><Link href="/practice/property">Property Disputes</Link></li>
-                  <li><Link href="/practice/consumer">Consumer Protection</Link></li>
+                  <li><Link href="/practice/civil-litigation">Civil Litigation</Link></li>
+                  <li><Link href="/practice/criminal-litigation">Criminal Litigation</Link></li>
+                  <li><Link href="/practice/family-law">Family & Matrimonial</Link></li>
+                  <li><Link href="/practice/property-disputes">Property Disputes</Link></li>
+                  <li><Link href="/practice/consumer-protection">Consumer Protection</Link></li>
                 </ul>
               )}
             </li>

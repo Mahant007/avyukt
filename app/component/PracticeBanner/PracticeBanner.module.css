@@ -11,7 +11,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(2, 11, 46, 0.75);
+  background: #1c3345;
 }
 
 .content {

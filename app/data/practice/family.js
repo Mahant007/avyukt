@@ -2,7 +2,7 @@ export const familyPracticeData = {
   title: "Family & Matrimonial Law",
 
   banner: {
-    title: "Civil Litigation",
+    title: "Family & Matrimonial Law",
     subtitle:
       "Comprehensive legal representation in civil disputes before courts and authorities.",
     backgroundImage: "/images/practice/civil-banner.jpg"

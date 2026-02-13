@@ -5,7 +5,7 @@ export const contactData = {
       "Get in touch with Avyukt Associates for legal consultation and assistance."
   },
   banner: {
-    title: "Civil Litigation",
+    title: "Contact Us",
     subtitle:
       "Comprehensive legal representation in civil disputes before courts and authorities.",
     backgroundImage: "/images/practice/civil-banner.jpg",

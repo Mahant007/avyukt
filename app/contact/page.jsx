@@ -4,12 +4,12 @@ import ContactInfo from "../component/contact/ContactInfo";
 import ContactForm from "../component/contact/ContactForm";
 import ContactMap from "../component/contact/ContactMap";
 import PracticeBanner from "../component/PracticeBanner/PracticeBanner";
-import { civilPracticeData } from "@/app/data/practice/civil";
+// import { contactData } from "../data/contact/contact";
 
 export default function ContactPage() {
   return (
     <section className={styles.page}>
-      <PracticeBanner {...civilPracticeData.banner}/>
+      <PracticeBanner {...contactData.banner}/>
       <div className={styles.container}>
 
 
