@@ -84,7 +84,7 @@ export default function HomeAbout({
           {imageSrc && (
             <div className="relative w-full h-[280px] md:h-[360px] rounded-lg overflow-hidden">
               <Image
-                src={imageSrc}
+                src="/Images/aboutsection.jpg"
                 alt={imageAlt}
                 fill
                 className="object-cover"
