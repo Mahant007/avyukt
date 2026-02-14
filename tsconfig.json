@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -19,7 +23,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ]
     }
   },
   "include": [
@@ -28,7 +34,12 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
-, "app/component/Footer/Footer.tsx"  ],
-  "exclude": ["node_modules"]
+    "**/*.mts",
+    "app/component/Footer/Footer.tsx",
+    "dist/types/**/*.ts",
+    "dist/dev/types/**/*.ts"
+, "app/Homepage/HeroSection/HeroSection.jsx", "app/Homepage/HomeAbout/HomeAbout.jsx"  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

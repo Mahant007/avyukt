@@ -24,7 +24,7 @@ export default function CourtsAuthorities({
                 alt={imageAlt}
                 fill
                 className="object-cover"
-                priority={false}
+                
               />
             </div>
           )}

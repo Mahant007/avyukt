@@ -1,4 +1,4 @@
-
+"use client";
 
 import Slider from "react-slick";
 import Link from "next/link";
@@ -50,7 +50,6 @@ export default function HeroSection() {
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className="heroSlide">
-
             {/* IMAGE */}
             {slide?.image && (
               <Image
@@ -58,7 +57,7 @@ export default function HeroSection() {
                 alt={slide?.title || "Banner"}
                 fill
                 unoptimized
-                priority={index === 0}
+               
                 className="heroImage"
               />
             )}
@@ -69,7 +68,6 @@ export default function HeroSection() {
             {/* CONTENT */}
             <div className="heroContent">
               <div className="heroText">
-
                 {slide?.title && (
                   <h1 className="heroTitle">{slide.title}</h1>
                 )}
@@ -82,7 +80,6 @@ export default function HeroSection() {
 
                 {(slide?.primaryButton || slide?.secondaryButton) && (
                   <div className="heroButtons">
-
                     {slide?.primaryButton?.text && (
                       <Link
                         href={slide.primaryButton.link}
@@ -100,17 +97,13 @@ export default function HeroSection() {
                         {slide.secondaryButton.text}
                       </Link>
                     )}
-
                   </div>
                 )}
-
               </div>
             </div>
-
           </div>
         ))}
       </Slider>
     </section>
   );
 }
-  

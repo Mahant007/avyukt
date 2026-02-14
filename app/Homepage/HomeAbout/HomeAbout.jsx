@@ -9,12 +9,11 @@ export default function HomeAbout({
   firmName,
   leaderName,
   location,
-  imageSrc,        // 👈 NEW (optional)
+  imageSrc,
   imageAlt = "About the Firm",
-  imagePosition = "right", // "left" | "right"
+  imagePosition = "right",
   readMoreLink = "/about",
 }) {
-  // If nothing is provided, do not render
   if (!title && !description && !imageSrc) return null;
 
   return (
@@ -41,7 +40,9 @@ export default function HomeAbout({
 
             {(firmName || leaderName || location) && (
               <p className="text-gray-600 mb-6">
-                {firmName && <span className="font-medium">{firmName}</span>}
+                {firmName && (
+                  <span className="font-medium">{firmName}</span>
+                )}
                 {leaderName && (
                   <>
                     {firmName ? " is led by " : ""}
@@ -50,8 +51,12 @@ export default function HomeAbout({
                 )}
                 {location && (
                   <>
-                    {(firmName || leaderName) ? ", based in " : ""}
-                    <span className="font-medium">{location}</span>
+                    {(firmName || leaderName)
+                      ? ", based in "
+                      : ""}
+                    <span className="font-medium">
+                      {location}
+                    </span>
                   </>
                 )}
                 .
@@ -60,25 +65,22 @@ export default function HomeAbout({
 
             {readMoreLink && (
               <Link
-  href={readMoreLink}
-  className="group inline-flex items-center gap-2 text-[#020e33] font-semibold
-             transition-all duration-300 ease-out"
->
-  <span className="relative">
-    Read More
-    <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#020e33]
-                     transition-all duration-300 group-hover:w-full"></span>
-  </span>
+                href={readMoreLink}
+                className="group inline-flex items-center gap-2 text-[#020e33] font-semibold transition-all duration-300 ease-out"
+              >
+                <span className="relative">
+                  Read More
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#020e33] transition-all duration-300 group-hover:w-full"></span>
+                </span>
 
-  <span className="transform transition-transform duration-300
-                   group-hover:translate-x-1">
-    →
-  </span>
-</Link>
+                <span className="transform transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
+              </Link>
             )}
           </div>
 
-          {/* IMAGE (OPTIONAL) */}
+          {/* IMAGE */}
           {imageSrc && (
             <div className="relative w-full h-[280px] md:h-[360px] rounded-lg overflow-hidden">
               <Image
@@ -86,7 +88,6 @@ export default function HomeAbout({
                 alt={imageAlt}
                 fill
                 className="object-cover"
-                priority={false}
               />
             </div>
           )}
