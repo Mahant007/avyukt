@@ -88,6 +88,7 @@ export default function HomeAbout({
                 alt={imageAlt}
                 fill
                 className="object-cover"
+                optimized
               />
             </div>
           )}
