@@ -1,5 +1,6 @@
 import HeroSection from "./HeroSection/HeroSection";
 import HomeAbout from "./HomeAbout/HomeAbout";
+import { homeAboutSection } from "../data/homepage/homeAboutSection";
 import { practiceAreasData } from "./BestPractice/data/BestPractice";
 import PracticeAreas from "./BestPractice/BestPractices";
 import CourtsAuthorities from "./CourtsAuthorities/CourtsAuthorities";
@@ -14,16 +15,7 @@ export default function Homepage() {
     <div className="homepage_container   w-auto">
       <HeroSection />
 
-      <HomeAbout
-        title="About Avyukt Associates"
-        description="Avyukt Associates is a law firm based in Ahmedabad, Gujarat, providing legal services in civil, criminal, and revenue-related matters. The firm undertakes legal representation, advisory work, and drafting services in accordance with applicable laws and professional standards."
-        firmName="Avyukt Associates"
-        leaderName="Advocate Sweta Namalvar"
-        location="Ahmedabad, Gujarat"
-        imageSrc="/Images/courts.png"
-        imagePosition="right"
-        readMoreLink="/About"
-      />
+      <HomeAbout data={homeAboutSection} />
 
       <PracticeAreas
         title={practiceAreasData.title}

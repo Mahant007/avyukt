@@ -3,28 +3,19 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function HomeAbout({
-  title,
-  description,
-  firmName,
-  leaderName,
-  location,
-  imageSrc,
-  imageAlt = "About the Firm",
-  imagePosition = "right",
-  readMoreLink = "/about",
-}) {
-  if (!title && !description && !imageSrc) return null;
+export default function HomeAbout({ data }) {
+  if (!data) return null;
+
+  const { content, media, cta } = data;
+  const { title, description, firm } = content;
+  const { image } = media;
 
   return (
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <div
-          className={`grid grid-cols-1 md:grid-cols-2 gap-10 items-center ${
-            imagePosition === "left" ? "md:flex-row-reverse" : ""
-          }`}
-        >
-          {/* TEXT CONTENT */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+          {/* TEXT */}
           <div>
             {title && (
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -38,59 +29,38 @@ export default function HomeAbout({
               </p>
             )}
 
-            {(firmName || leaderName || location) && (
+            {firm && (
               <p className="text-gray-600 mb-6">
-                {firmName && (
-                  <span className="font-medium">{firmName}</span>
-                )}
-                {leaderName && (
-                  <>
-                    {firmName ? " is led by " : ""}
-                    <span className="font-medium">{leaderName}</span>
-                  </>
-                )}
-                {location && (
-                  <>
-                    {(firmName || leaderName)
-                      ? ", based in "
-                      : ""}
-                    <span className="font-medium">
-                      {location}
-                    </span>
-                  </>
-                )}
-                .
+                <span className="font-medium">{firm.name}</span>{" "}
+                is led by{" "}
+                <span className="font-medium">{firm.leader}</span>, based in{" "}
+                <span className="font-medium">{firm.location}</span>.
               </p>
             )}
 
-            {readMoreLink && (
+            {cta && (
               <Link
-                href={readMoreLink}
-                className="group inline-flex items-center gap-2 text-[#020e33] font-semibold transition-all duration-300 ease-out"
+                href={cta.link}
+                className="group inline-flex items-center gap-2 text-[#020e33] font-semibold"
               >
-                <span className="relative">
-                  Read More
-                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#020e33] transition-all duration-300 group-hover:w-full"></span>
-                </span>
-
-                <span className="transform transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
+                {cta.text}
               </Link>
             )}
           </div>
 
           {/* IMAGE */}
-          {imageSrc && (
+          {image && (
             <div className="relative w-full h-[280px] md:h-[360px] rounded-lg overflow-hidden">
               <Image
-                src={imageSrc}
-                alt={imageAlt}
+                src={image.src}
+                alt={image.alt}
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
           )}
+
         </div>
       </div>
     </section>
