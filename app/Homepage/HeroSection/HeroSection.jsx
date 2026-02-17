@@ -56,7 +56,7 @@ export default function HeroSection() {
                 src={slide.image}
                 alt={slide?.title || "Banner"}
                 fill
-                unoptimized
+                
                
                 className="heroImage"
               />

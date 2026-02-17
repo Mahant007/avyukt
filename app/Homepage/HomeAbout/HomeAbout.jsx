@@ -9,7 +9,7 @@ export default function HomeAbout({
   firmName,
   leaderName,
   location,
-  imageSrc,
+  image,
   imageAlt = "About the Firm",
   imagePosition = "right",
   readMoreLink = "/about",
@@ -81,14 +81,13 @@ export default function HomeAbout({
           </div>
 
           {/* IMAGE */}
-          {imageSrc && (
+          {image && (
             <div className="relative w-full h-[280px] md:h-[360px] rounded-lg overflow-hidden">
               <Image
-                src="/Images/aboutsection.jpg"
+                src={image}
                 alt={imageAlt}
                 fill
                 className="object-cover"
-                optimized
               />
             </div>
           )}

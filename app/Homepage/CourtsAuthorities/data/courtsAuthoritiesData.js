@@ -2,7 +2,7 @@ export const courtsAuthoritiesData = {
   title: "Courts & Authorities",
   description:"The firm represents clients before various courts and authorities, subject to jurisdiction and the nature of the matter.",
 
-  imageSrc: "/Images/courts.png",
+  imageSrc: "/Images/courts.jpg",
 
   courts: [
     {
