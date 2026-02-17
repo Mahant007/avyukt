@@ -20,7 +20,7 @@ export default function Homepage() {
         firmName="Avyukt Associates"
         leaderName="Advocate Sweta Namalvar"
         location="Ahmedabad, Gujarat"
-        imageSrc="/Images/aboutsection.jpg"
+        imageSrc="/Images/courts.png"
         imagePosition="right"
         readMoreLink="/About"
       />
