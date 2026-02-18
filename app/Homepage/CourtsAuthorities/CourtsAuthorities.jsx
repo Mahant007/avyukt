@@ -23,7 +23,7 @@ export default function CourtsAuthorities({
                   src={imageSrc}
                   alt='courts images'
                   fill
-                  className={styles.memberImage}
+                  // className={styles.memberImage}
                 />
             </div>
           )}
