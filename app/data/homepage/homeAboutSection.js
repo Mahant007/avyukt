@@ -11,7 +11,7 @@ export const homeAboutSection = {
   },
   media: {
     image: {
-      src: "/Images/aboutsection.jpg",
+      src: "/images/aboutsection.jpg",
       alt: "Avyukt Associates Law Firm",
       position: "right",
     },

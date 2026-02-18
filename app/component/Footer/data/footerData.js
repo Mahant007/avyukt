@@ -1,7 +1,7 @@
 export const footerData = {
   brand: {
     name: "Avyukt Associates",
-    logo: "/Images/avyukt_logo.png",
+    logo: "/images/avyukt_logo.png",
     description:
       "Avyukt Associates is a law firm based in Ahmedabad, Gujarat, providing legal services in accordance with applicable laws and professional standards.",
     socialLinks: [
