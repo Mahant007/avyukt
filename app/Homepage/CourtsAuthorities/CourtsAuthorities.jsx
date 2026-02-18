@@ -20,12 +20,11 @@ export default function CourtsAuthorities({
           {imageSrc && (
             <div className="relative w-full h-[320px] md:h-[420px] rounded-xl overflow-hidden">
               <Image
-                src={imageSrc}
-                alt={imageAlt}
-                fill
-                className="object-cover"
-                
-              />
+                  src={imageSrc}
+                  alt='courts images'
+                  fill
+                  className={styles.memberImage}
+                />
             </div>
           )}
 

@@ -22,7 +22,7 @@ export default function Footer() {
         <div className={styles.main}>
           {/* LEFT */}
           <div className={styles.left}>
-            <Image src={brand.logo} alt={brand.name} width={180} height={60} />
+            <Image src={brand.logo} alt={brand.name}  width={180} height={60} />
 
             <p className={styles.description}>{brand.description}</p>
           </div>
