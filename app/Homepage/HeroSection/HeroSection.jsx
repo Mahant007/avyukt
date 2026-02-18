@@ -8,7 +8,7 @@ import "./HeroSection.css";
 export default function HeroSection() {
   const slides = [
     {
-      image: "/Images/golden-justice-scale.jpg",
+      image: "/Images/justice-scale.jpg",
       title: "Justice With Integrity",
       description:
         "Providing honest, transparent, and result-driven legal solutions.",
