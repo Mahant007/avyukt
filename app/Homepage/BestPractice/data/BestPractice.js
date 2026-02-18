@@ -24,7 +24,7 @@ export const practiceAreasData = {
       description:
         "Legal assistance in family and matrimonial matters including divorce, maintenance, custody, and other proceedings.",
       icon: "/icons/practice-areas/family-law.svg",
-      viewMoreLink: "/practice/family-matrimonial-law",
+      viewMoreLink: "/practice/family-law",
     },
     {
       title: "Property Disputes",
@@ -45,7 +45,7 @@ export const practiceAreasData = {
       description:
         "Preparation and review of agreements, notices, pleadings, affidavits, and other legal documents.",
       icon: "/icons/practice-areas/drafting.svg",
-      viewMoreLink: "/practice/drafting-legal-documentation",
+      viewMoreLink: "/practice/drafting-legal",
     },
   ],
 };

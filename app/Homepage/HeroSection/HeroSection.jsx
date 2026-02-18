@@ -8,7 +8,7 @@ import "./HeroSection.css";
 export default function HeroSection() {
   const slides = [
     {
-      image: "/Images/justice-scale.jpg",
+      image: "/images/justice-scale.jpg",
       title: "Justice With Integrity",
       description:
         "Providing honest, transparent, and result-driven legal solutions.",
@@ -16,18 +16,15 @@ export default function HeroSection() {
         text: "Free Consultation",
         link: "/contact",
       },
-      secondaryButton: {
-        text: "Practice Areas",
-        link: "/practice-areas",
-      },
+      
     },
     {
-      image: "/Images/slider2.png",
+      image: "/images/slider2.png",
       title: "Protecting Your Rights",
       description: "Experienced advocacy before courts and tribunals.",
     },
     {
-      image: "/Images/slide3.png",
+      image: "/images/slide3.png",
     },
   ];
 

@@ -55,6 +55,7 @@ export default function Header() {
                   <li><Link href="/practice/family-law">Family & Matrimonial</Link></li>
                   <li><Link href="/practice/property-disputes">Property Disputes</Link></li>
                   <li><Link href="/practice/consumer-protection">Consumer Protection</Link></li>
+                  <li><Link href="/practice/drafting-legal">Drafting & Legal Documentation</Link></li>
                 </ul>
               )}
             </li>

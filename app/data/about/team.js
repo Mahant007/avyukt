@@ -25,7 +25,7 @@ export const teamData = [
     id: "member3",
     name: "Advocate Rajesh Singh Thakur",
     role: "Sr. Advocate and Notary at Avyukt Associates",
-    image: "/images/user .png",
+    image: "/images/user.png",
     shortIntro:
       "Advocate R. S. Thakur has a strong and well-established practice in Criminal Law, where he regularly appears before trial courts and appellate forums. ",
     bio: [

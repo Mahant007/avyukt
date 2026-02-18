@@ -17,7 +17,7 @@ export const footerData = {
     { label: "Family & Matrimonial Law", href: "/practice/family-law" },
     { label: "Property Disputes", href: "/practice/property-disputes" },
     { label: "Consumer Protection", href: "/practice/consumer-protection" },
-    { label: "High Court Matters", href: "/practice/high-court" },
+    { label: "Drafting & Legal Documentation", href: "/practice/drafting-legal" },
   ],
 
   usefulLinks: [

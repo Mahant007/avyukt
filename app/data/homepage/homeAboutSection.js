@@ -3,13 +3,11 @@ export const homeAboutSection = {
   type: "about",
   content: {
     title: "About Avyukt Associates",
-    description:
-      "Avyukt Associates is a full-service litigation law firm providing strategic and ethical legal representation across civil, criminal, and constitutional matters.",
-    firm: {
-      name: "Avyukt Associates",
-      leader: "Adv. Mahant Uchkalwar",
-      location: "Ahmedabad, Gujarat",
-    },
+    description:[
+     "We are a dedicated legal practice offering comprehensive legal services across diverse areas of law.",
+      "With a strong foundation in legal principles and courtroom advocacy, we are committed to delivering strategic, ethical, and result-oriented legal solutions to individuals, businesses, and institutions.",
+      "Every matter is handled with diligence, confidentiality, and professionalism."
+    ]
   },
   media: {
     image: {
@@ -20,6 +18,6 @@ export const homeAboutSection = {
   },
   cta: {
     text: "Read More",
-    link: "/about",
+    link: "/About",
   },
 };
