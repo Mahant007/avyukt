@@ -166,7 +166,7 @@
     height: 85vh;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .heroSlide .desktopImage {
     display: none;
   }
