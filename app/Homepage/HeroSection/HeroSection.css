@@ -22,14 +22,18 @@
 }
 
 /* ===== MOBILE / DESKTOP IMAGE SWITCH ===== */
-
-.desktopImage {
+/* Default: Desktop image */
+.heroSlide .desktopImage {
   display: block;
+  z-index: 1;
 }
 
-.mobileImage {
+.heroSlide .mobileImage {
   display: none;
 }
+
+/* Only for small phones (320px - 480px) */
+
 
 /* OVERLAY */
 .heroOverlay {
@@ -130,14 +134,7 @@
 /* Mobile */
 @media (max-width: 768px) {
 
-  /* Switch images */
-  .desktopImage {
-    display: none;
-  }
 
-  .mobileImage {
-    display: block;
-  }
 
   .heroContent {
     justify-content: center;
@@ -169,7 +166,16 @@
     height: 85vh;
   }
 }
+@media (max-width: 320px) {
+  .heroSlide .desktopImage {
+    display: none;
+  }
 
+  .heroSlide .mobileImage {
+    display: block;
+    z-index: 1;
+  }
+}
 /* ================= SLICK FIX ================= */
 
 .slick-slider {
