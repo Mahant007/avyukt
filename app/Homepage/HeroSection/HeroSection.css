@@ -21,6 +21,16 @@
   object-fit: cover;
 }
 
+/* ===== MOBILE / DESKTOP IMAGE SWITCH ===== */
+
+.desktopImage {
+  display: block;
+}
+
+.mobileImage {
+  display: none;
+}
+
 /* OVERLAY */
 .heroOverlay {
   position: absolute;
@@ -120,6 +130,15 @@
 /* Mobile */
 @media (max-width: 768px) {
 
+  /* Switch images */
+  .desktopImage {
+    display: none;
+  }
+
+  .mobileImage {
+    display: block;
+  }
+
   .heroContent {
     justify-content: center;
     text-align: center;
@@ -151,35 +170,33 @@
   }
 }
 
+/* ================= SLICK FIX ================= */
 
-
-
-.slick-slider{
-
-    width: 100% !important;
-    max-width: 1920px !important;
-}
- .slick-next{
-    position: absolute;
-    right: 20px;
-}
-.slick-next::before{
-    font-size: 30px;
+.slick-slider {
+  width: 100% !important;
+  max-width: 1920px !important;
 }
 
-.slick-prev{
-    position: absolute;
-    left: 20px;
-    z-index: 1;
+.slick-next {
+  position: absolute;
+  right: 20px;
 }
-.slick-prev::before{
-    font-size: 30px;
-    /* display: inline-block; */
-    width: 20px;
-    height: 20px;
 
+.slick-next::before {
+  font-size: 30px;
 }
-.slick-dots{
-    position: absolute;
-    bottom: 0;
+
+.slick-prev {
+  position: absolute;
+  left: 20px;
+  z-index: 1;
+}
+
+.slick-prev::before {
+  font-size: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
 }

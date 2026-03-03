@@ -8,7 +8,8 @@ import "./HeroSection.css";
 export default function HeroSection() {
   const slides = [
     {
-      image: "/images/justice-scale.jpg",
+      desktopImage: "/images/justice-scale.jpg",
+      mobileImage: "/images/mobile-slide1.png",
       title: "Justice With Integrity",
       description:
         "Providing honest, transparent, and result-driven legal solutions.",
@@ -16,15 +17,16 @@ export default function HeroSection() {
         text: "Free Consultation",
         link: "/contact",
       },
-      
     },
     {
-      image: "/images/slider2.png",
+      desktopImage: "/images/slider2.png",
+      mobileImage: "/images/mobile-slide3.png",
       title: "Protecting Your Rights",
       description: "Experienced advocacy before courts and tribunals.",
     },
     {
-      image: "/images/slide3.png",
+      desktopImage: "/images/slide3.png",
+      mobileImage: "/images/mobile-slide2.png",
     },
   ];
 
@@ -37,7 +39,7 @@ export default function HeroSection() {
     speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: isSliderEnabled,
     autoplaySpeed: 6000,
     pauseOnHover: true,
   };
@@ -47,15 +49,26 @@ export default function HeroSection() {
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className="heroSlide">
-            {/* IMAGE */}
-            {slide?.image && (
+
+            {/* DESKTOP IMAGE */}
+            {slide?.desktopImage && (
               <Image
-                src={slide.image}
+                src={slide.desktopImage}
                 alt={slide?.title || "Banner"}
                 fill
-                unoptimized
-               
-                className="heroImage"
+                priority={index === 0}
+                className="heroImage desktopImage"
+              />
+            )}
+
+            {/* MOBILE IMAGE */}
+            {slide?.mobileImage && (
+              <Image
+                src={slide.mobileImage}
+                alt={slide?.title || "Banner"}
+                fill
+                priority={index === 0}
+                className="heroImage mobileImage"
               />
             )}
 
@@ -98,6 +111,7 @@ export default function HeroSection() {
                 )}
               </div>
             </div>
+
           </div>
         ))}
       </Slider>
