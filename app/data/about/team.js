@@ -3,7 +3,7 @@ export const teamData = [
     id: "sweta",
     name: "Advocate Sweta Namalvar",
     role: "Founder – Avyukt Associates",
-    image: "/images/sweta.jpeg",
+    image: "/images/first.PNG",
     shortIntro:
       "Practicing in revenue, land, property disputes, and civil matters.",
     bio: [
@@ -14,7 +14,7 @@ export const teamData = [
     id: "member2",
     name: "Digvijay Singh Rajput",
     role: "Co-Founder",
-    image: "/images/digvijay.png",
+    image: "/images/second.jpeg",
     shortIntro:
       "At Avyukt Associates, Digvijay Singh Rajput specializes in drafting and reviewing a wide range of legal documents..",
     bio: [
@@ -25,7 +25,7 @@ export const teamData = [
     id: "member3",
     name: "Advocate Rajesh Singh Thakur",
     role: "Sr. Advocate and Notary at Avyukt Associates",
-    image: "/images/user.png",
+    image: "/images/third.jpeg",
     shortIntro:
       "Advocate R. S. Thakur has a strong and well-established practice in Criminal Law, where he regularly appears before trial courts and appellate forums. ",
     bio: [
